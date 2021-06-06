@@ -1,0 +1,8 @@
+services:
+  nginx:
+    build:
+      context: "./build/nginx"
+    container_name: 'nginx_ssl'
+    ports :
+      - "80:80"
+      - "443:443"
